@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Technologie Internetu – Ćwiczenia #4 Wstęp do JavaScript</title>
+    <meta name="description" content="Cwiczenie 4D" />
+    <meta name="keywords" content="TIN, JS, JavaScript" />
+    <meta name="author" content="s13092" />
+    <meta http-equiv="X-Ua-Compatibile" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+    <script src="js/4d.js" async></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Zadanie 4D</h1>
+      <form>
+        <fieldset>
+          <legend>Enter student's data for table below:</legend>
+          <p>
+            <label>Subject:</label>
+            <input type="text" id="subject" class="inputField" />
+          </p>
+          <p>
+            <label>Name:</label>
+            <input type="text" id="name" class="inputField" />
+          </p>
+          <p>
+            <label>E-mail:</label>
+            <input type="email" id="email" class="inputField" />
+          </p>
+          <p>
+            <label>Grade:</label>
+            <input type="text" id="grade" class="inputField" required />
+          </p>
+          <button
+            type="button"
+            name="button"
+            value="Add to Table"
+            class="AddToTable"
+          >
+            Add to table
+          </button>
+        </fieldset>
+      </form>
+      <div class="section">
+        <table>
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Name</th>
+              <th>E-mail</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+/* •	strona ma nagłówek, wykorzystujący obrazek z zaokrąglonymi rogami, obrócony i rzucający cień + tekst */
+header {
+  border-radius: 1em;
+  background: url('../img/dog1.jpg');
+  height: 200px;
+  width: 300px;
+  transform: rotate(20deg);
+  margin: auto;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  margin-bottom: 55px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+article,
+nav {
+  column-width: 300px;
+}
+
+article#content {
+  column-width: 300px;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+p>img {
+  float: left;
+  margin-right: 1rem;
+}
+
+.pulledQuotes {
+  float: right;
+  width: 100px;
+  background: #ddf;
+  font-weight: bold;
+  padding: 13px;
+  margin: 0 13px 13px 0;
+}
+
+blockquote {
+  margin: 0;
+  /* gets rid of the default blockquote margin */
+}
+
+footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: auto;
+  }
+
+  article#content {
+    order: 1
+  }
+
+  article#gallery {
+    order: 2
+  }
+}
+
+/* •	(opcja): uzupełnij stronę o import dwóch czcionek, jedną wykorzystaj do nagłówków i pulled quotes, drugą do głównego tekstu i podpisów */
+p,
+figcaption {
+  font-family: 'Fahkwang', sans-serif;
+}
+
+h1,
+h2,
+.pulledQuotes {
+  font-family: 'Lato', sans-serif;
+}

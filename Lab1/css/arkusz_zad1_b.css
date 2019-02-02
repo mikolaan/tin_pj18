@@ -1,0 +1,24 @@
+/* 3. Arkusz powinien definiować:
+    styl i rozmiar czcionki elementów formularza, 
+    kolory etykiet pól 
+    pola, które są obowiązkowe powinny być wyróżnione.*/
+
+body {
+    background-color: white;
+    font-family: Verdana;
+}
+
+#poleTekstowe{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 30px;
+}
+label[for="poleTekstowe"]{
+    color: blueviolet;
+ }
+
+ input:required{
+     color: crimson
+ }

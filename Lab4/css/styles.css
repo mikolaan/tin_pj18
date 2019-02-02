@@ -1,0 +1,37 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: 70%;
+  max-width: 1000px;
+  min-width: 480px;
+  margin: 0 auto;
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+form {
+  width: 500px;
+}
+
+.inputField {
+  display: inline-block;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 2px;
+}

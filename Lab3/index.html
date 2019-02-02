@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang='pl' dir='ltr'>
+
+  <head>
+    <meta charset='utf-8'>
+    <title>TIN – Ćwiczenia #3 Wstęp do JavaScript</title>
+    <meta name='description' content='Cwiczenie 3'>
+    <meta name='keywords' content='TIN, JS, JavaScript'>
+    <meta name='author' content='Andrzej Mikołajczak, s13092'>
+    <meta http-equiv='X-Ua-Compatibile' content='IE=edge,chrome=1'>
+    <link rel='stylesheet' type='text/css' href='css/styles.css'>
+
+    <!-- <script src='js/3_resetAll.js' type='text/javascript' async></script> -->
+    <script src='js/3a.js' type='text/javascript' async></script>
+    <script src='js/3b.js' type='text/javascript' async></script>
+    <script src='js/3c.js' type='text/javascript' async></script>
+    <script src='js/3d.js' type='text/javascript' async></script>
+    <script src='js/3e.js' type='text/javascript' async></script>
+    <script src='js/3f.js' type='text/javascript' async></script>
+    <script src='js/3g.js' type='text/javascript' async></script>
+    <script src='js/3h.js' type='text/javascript' async></script>
+    <script src='js/3i.js' type='text/javascript' async></script>
+    <script src='js/3j.js' type='text/javascript' async></script>
+    <script src='js/3k.js' type='text/javascript' async></script>
+    <script src='js/3l.js' type='text/javascript' async></script>
+    <script src='js/3m.js' type='text/javascript' async></script>
+  </head>
+
+  <body>
+    <h2>Internet Technologies (TIN) lab 3</h2>
+
+    <!-- (section.container>(div.exercise$+div.result$))*11 -->
+    <section class='container'>
+      <div class='exercise div3a' id='radio'>
+        <h4>Exercise 3A:</h4>
+        <p>Enter a number to calculate factorial and select the approach: </p>
+        <input type='number' class='field3a'>
+        <label> <input type='radio' class="radio" name='factorial' value='Iterative' checked> Iterative </label>
+        <label> <input type='radio' class="radio" name='factorial' value='Recursive'> Recursive </label>
+        <input type='button' class='submit3a' value='Check the result!'>
+      </div>
+      <div class='result div3a'>
+        <h4>Exercise 3A result:</h4>
+        <p class='result result3a'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise2'>
+        <h4>Exercise 3B:</h4>
+        <label for='field3b'>Exercise B: Enter a number to calculate n-th Fibonacci element: </label>
+        <input type='text' id='field3b' class='field3b'>
+        <input type='submit' value='Enter a number' class='submit3b'>
+      </div>
+      <div class='result2'>
+        <h4>Exercise 3B result:</h4>
+        <p class='result result3b'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise3'>
+        <label for='field3c'>Exercise C: Enter a sequence to check if it palindrome: </label>
+        <input type='text' id='field3c' class='field3c'>
+        <input type='submit' value='Enter a text' class='submit3c'>
+      </div>
+      <div class='result3'>
+        <h4>Exercise 3C result:</h4>
+        <p class='result result3c'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise4'>
+        <label for='field3d'>Exercise D: Enter a sequence to sort it: </label>
+        <input type='text' id='field3d' class='field3d' placeholder='webmaster'>
+        <input type='submit' value='Enter a sequence' class='submit3d'>
+      </div>
+      <div class='result4'>
+        <h4>Exercise 3D result:</h4>
+        <p class='result result3d'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise5'>
+        <label for='field3e'>Exercise E: Enter a sequence to find longest word: </label>
+        <input type='text' id='field3e' class='field3e'>
+        <input type='submit' value='Enter a sequence' class='submit3e'>
+      </div>
+      <div class='result5'>
+        <h4>Exercise 3E result:</h4>
+        <p class='result result3e'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise6'>
+        <label for='field3f'>Exercise F: Enter a number to check if it is prime: </label>
+        <input type='text' id='field3f' class='field3f'>
+        <input type='submit' value='Enter a number' class='submit3f'>
+      </div>
+      <div class='result6'>
+        <h4>Exercise 3F result:</h4>
+        <p class='result result3f'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise7'>
+        <label for='field3g'>Exercise G: Enter a text to check its type: </label>
+        <input type='text' id='field3g' class='field3g'>
+        <input type='submit' value='Enter a text' class='submit3g'>
+      </div>
+      <div class='result7'>
+        <h4>Exercise 3G result:</h4>
+        <p class='result result3g'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise8'>
+        <label for='field3h'>Exercise H: Enter an array of number separated by spaces to show second largest and smallest number: </label>
+        <input type='text' id='field3h' class='field3h' placeholder='1 2 3 4 5'>
+        <input type='submit' value='Enter an array' class='submit3h'>
+      </div>
+      <div class='result8'>
+        <h4>Exercise 3H result:</h4>
+        <p class='result result3h'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise9'>
+        <label for='field3i'>Exercise I: Enter an amount of money to change money according to provided denomination (46, [25, 10, 5, 2, 1]): </label>
+        <input type='text' id='field3i_money' class='field3i_money' placeholder='46'>
+        <input type='text' id='field3i_denomination' class='field3i_denomination' placeholder='25, 10, 5, 2, 1'>
+        <input type='submit' value='Enter an amount and array' class='submit3i'>
+      </div>
+      <div class='result9'>
+        <h4>Exercise 3I result:</h4>
+        <p class='result result3i'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise10'>
+        <label for='field3j'>Exercise J: Enter an array and searched value to perform binary search: </label>
+        <input type='text' id='field3ja' class='field3ja'>
+        <input type='text' id='field3jb' class='field3jb'>
+        <input type='submit' value='Enter an array of chars' class='submit3j'>
+      </div>
+      <div class='result10'>
+        <h4>Exercise 3J result:</h4>
+        <p class='result result3j'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise11'>
+        <label for='field3k'>Exercise K: Enter a name for object: </label>
+        <input type='text' id='field3k' class='field3k'>
+        <input type='submit' value='Enter a name' class='submit3k'>
+      </div>
+      <div class='result11'>
+        <h4>Exercise 3K result:</h4>
+        <p class='result result3k'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise12'>
+        <label for='field3l_name'>Exercise L: Enter student name: </label>
+        <input type='text' id='field3l_name' class='field3l_name'>
+
+        <label for='field3l_surname'>Enter student surname: </label>
+        <input type='text' id='field3l_surname' class='field3l_surname'>
+
+        <label for='field3l_transcript'>Enter student transcript number: </label>
+        <input type='text' id='field3l_transcript' class='field3l_transcript'>
+
+        <label for='field3l_grades'>Enter student grades: </label>
+        <input type='text' id='field3l_grades' class='field3l_grades'>
+
+        <input type='submit' value='Submit student data' class='submit3l'>
+      </div>
+      <div class='result12'>
+        <h4>Exercise 3L result:</h4>
+        <p class='result result3l'></p>
+      </div>
+    </section>
+    <section class='container'>
+      <div class='exercise13'>
+        <label for='field3m'>Exercise M: Object prototype </label>
+        <input type='submit' value='Show 3M result' class='submit3m'>
+      </div>
+      <div class='result13'>
+        <h4>Exercise 3M result:</h4>
+        <p class='result result3m'></p>
+      </div>
+    </section>
+    <!-- <div class='form'>
+      <label for='field3a'>Exercise A: Enter a number to calculate factorial: </label>
+      <input type='text' id='field3a' class='field3a'>
+      <input type='submit' value='Enter a number' class='submit3a'>
+    </div>
+
+    <div class='form'>
+      <label for='field3b'>Exercise B: Enter a number to calculate n-th Fibonacci element: </label>
+      <input type='text' id='field3b' class='field3b'>
+      <input type='submit' value='Enter a number' class='submit3b'>
+    </div>
+
+    <div class='form'>
+      <label for='field3c'>Exercise C: Enter a sequence to check if it palindrome: </label>
+      <input type='text' id='field3c' class='field3c'>
+      <input type='submit' value='Enter a text' class='submit3c'>
+    </div>
+
+    <div class='form'>
+      <label for='field3d'>Exercise D: Enter a sequence to sort it: </label>
+      <input type='text' id='field3d' class='field3d' placeholder='webmaster'>
+      <input type='submit' value='Enter a sequence' class='submit3d'>
+    </div>
+
+    <div class='form'>
+      <label for='field3e'>Exercise E: Enter a sequence to find longest word: </label>
+      <input type='text' id='field3e' class='field3e'>
+      <input type='submit' value='Enter a sequence' class='submit3e'>
+    </div>
+
+    <div class='form'>
+      <label for='field3f'>Exercise F: Enter a number to check if it is prime: </label>
+      <input type='text' id='field3f' class='field3f'>
+      <input type='submit' value='Enter a number' class='submit3f'>
+    </div>
+
+    <div class='form'>
+      <label for='field3g'>Exercise G: Enter a text to check its type: </label>
+      <input type='text' id='field3g' class='field3g'>
+      <input type='submit' value='Enter a text' class='submit3g'>
+    </div>
+
+    <div class='form'>
+      <label for='field3h'>Exercise H: Enter an array of number separated by spaces: </label>
+      <input type='text' id='field3h' class='field3h'>
+      <input type='submit' value='Enter an array' class='submit3h'>
+    </div>
+
+    <div class='form'>
+      <label for='field3i'>Exercise I: Enter an amount of money to change money according to provided denomination (46, [25, 10, 5, 2, 1]): </label>
+      <input type='text' id='field3i' class='field3i' placeholder='46, [25, 10, 5, 2, 1]'>
+      <input type='submit' value='Enter an amount and array' class='submit3i'>
+    </div>
+
+    <div class='form'>
+      <label for='field3j'>Exercise J: Enter an array and searched value to perform binary search: </label>
+      <input type='text' id='field3ja' class='field3ja'>
+      <input type='text' id='field3jb' class='field3jb'>
+      <input type='submit' value='Enter an array of chars' class='submit3j'>
+    </div>
+
+    <div class='form'>
+      <label for='field3k'>Exercise K: Enter a name for object: </label>
+      <input type='text' id='field3k' class='field3k'>
+      <input type='submit' value='Enter a name' class='submit3k'>
+    </div>
+
+    <div class='form'>
+      <label for='field3l_name'>Exercise L: Enter student name: </label>
+      <input type='text' id='field3l_name' class='field3l_name'>
+
+      <label for='field3l_surname'>Enter student surname: </label>
+      <input type='text' id='field3l_surname' class='field3l_surname'>
+
+      <label for='field3l_transcript'>Enter student transcript number: </label>
+      <input type='text' id='field3l_transcript' class='field3l_transcript'>
+
+      <label for='field3l_grades'>Enter student grades: </label>
+      <input type='text' id='field3l_grades' class='field3l_grades'>
+
+      <input type='submit' value='Submit student data' class='submit3l'>
+    </div>
+
+    <div class='form'>
+      <label for='field3m'>Exercise M: Object prototype </label>
+      <input type='submit' value='Show 3M result' class='submit3m'>
+    </div>
+    </div>
+
+    <div class='exerciseResults'>
+      <p class='result3a'></p>
+      <p class='result3b'></p>
+      <p class='result3c'></p>
+      <p class='result3d'></p>
+      <p class='result3e'></p>
+      <p class='result3f'></p>
+      <p class='result3g'></p>
+      <p class='result3h'></p>
+      <p class='result3i'></p>
+      <p class='result3j'></p>
+      <p class='result3k'></p>
+      <p class='result3l'></p>
+      <p class='result3m'></p>
+    </div> -->
+
+  </body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>TIN 1, Ćwiczenie B</title>
+    <meta
+      name="description"
+      content="Budowa formularza HTML + arkusza styli CSS"
+    />
+    <meta name="keywords" content="TIN, HTML, CSS, 01_HTML_CSS, Ćwiczenie B" />
+    <meta name="author" content="s13092" />
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1" />
+    <!--
+      3. Arkusz powinien definiować styl i rozmiar czcionki elementów formularza, kolory
+    -->
+    <!-- etykiet pól (pola, które są obowiązkowe powinny być wyróżnione). -->
+    <link rel="stylesheet" href="css/arkusz_zad1_b.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- 1. W ciele dokumentu umieść tag <form> ... </form> -->
+    <form name="Zadanie 1, B" method="post">
+      <div class="Wymagane">
+        <!-- 2. Wykorzystaj elementy formularza omówione na wykładzie: -->
+        <!-- o Pole tekstowe -->
+        <label for="poleTekstowe">Uzupełnij pole tekstowe:</label>
+        <input
+          type="text"
+          name="1Pole tekstowe"
+          id="poleTekstowe"
+          placeholder="Wpisz cokolwiek"
+          required
+        />
+
+        <!-- o Pole z hasłem -->
+        <label for="poleHaslo">Wpisz hasło:</label>
+        <input type="password" name="Pole na hasło" id="poleHaslo" required />
+      </div>
+      <!-- o Checkbox -->
+      <div>
+        <input type="checkbox" id="zazn" checked="on" />
+        <label for="zazn">Zaznaczam pole</label>
+      </div>
+
+      <!-- o Grupa radiobuttonów -->
+      <!--
+        name has to be declared to make radio buttons act as if in one group
+      -->
+      <div>
+        <input type="radio" id="rdButton" name="department" value="WIn" />
+        <label for="rdButton"> Wydział informatyki </label>
+
+        <input type="radio" id="rdButton" name="department" value="WZ" />
+        <label for="rdButton"> Wydział Zarządzania </label>
+
+        <!-- o Lista select z grupami opcji -->
+        <label for="lang">Wybierz język:</label>
+        <select id="lang">
+          <optgroup label="Nie-słowiańskie">
+            <option value="es">Hiszpański</option>
+            <option value="en">Angielski</option>
+          </optgroup>
+          <option value="pl" selected>Polski</option>
+        </select>
+      </div>
+
+      <div>
+        <!-- o Textareao Przycisk Submit -->
+        <label for="comment">Skomentuj</label>
+        <textarea id="comment" rows="3" cols="40"> </textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Wyślij" />
+
+        <!-- o Przycisk Reset -->
+        <input type="reset" value="Wyczyść wszystko" />
+      </div>
+      <fieldset>
+        <legend>Informacje:</legend>
+        Waga<input type="text" size="3" /> Wzrost<input type="text" size="3" />
+      </fieldset>
+      <dialog>
+        <dt>Me</dt>
+        <dd>2</dd>
+        <dt>You</dt>
+        <dd>No, please, 3!</dd>
+      </dialog>
+    </form>
+  </body>
+</html>

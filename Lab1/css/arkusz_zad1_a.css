@@ -1,0 +1,52 @@
+/* 3. Arkusz CSS powinien definiować:
+a. Styl i rozmiar czcionki nagłówków i akapitów */
+
+body {
+  background-color: white;
+  font-family: Arial;
+}
+
+h {
+  font-size: 24px;
+  font-size: 4em;
+  font-size: medium;
+  font-size: larger;
+  font-weight: bold;
+  font-weight: 700;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 22px;
+  font-size: 2em;
+  font-size: x-small;
+  font-size: larger;
+  font-style: oblique;
+}
+
+/* b. Styl krawędzi tabeli */
+td {
+  border: 1px solid black;
+  font-family: Calibri;
+  text-align: center;
+}
+
+th {
+  border: 1px solid black;
+  font-family: Calibri;
+}
+
+/* c. Usunąć podkreślenia spod linków */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+/*d. Zmienić styl wypunktowania dla list nienumerowanych */
+ul {
+  list-style-type: lower-roman;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
